@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>555Mix</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            min-height: 100vh;
+            background: linear-gradient(#0F2341, #0B45A0);
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 70%;
+            height: 100px;
+        }
+
+        .content>.letter>#title {
+            font-size: 60px;
+            font-weight: 300;
+            color: #fff;
+            font-family: sans-serif;
+        }
+
+        p {
+            color: white;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .logo {
+            width: 6rem;
+        }
+
+
+        .content {
+            display: flex;
+            width: 65%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 0 17%;
+        }
+
+        .letter {
+            width: 520px;
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+        }
+
+        .download {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            height: 55px;
+        }
+
+        .first {
+            background-color: transparent;
+            border: 1px solid white;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+            width: 150px;
+        }
+
+        .download>.ps_button>img {
+            width: 30px;
+            margin: 10px;
+        }
+
+        .ps_button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 1px;
+            background-color: white;
+
+        }
+
+        .ps_text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        #get{
+            color: black;
+            font-weight: 400;
+            font-size: 10px;
+        }
+        /* .ps_text:first-child {
+            color: gray;
+            font-weight: 400;
+            font-size: 10px;
+        } */
+
+        .ps_text:last-child {
+            color: black;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .container>.content>.preview>img {
+            width: 350px;
+            margin: 30px 0 30px;
+        }
+
+       
+        @media screen and (max-width: 480px) {
+            *{
+                box-sizing: unset;
+            }
+            .letter {
+                text-align: center;
+                width: 280px;
+            }
+            .content>.letter>#title {
+            font-size: 30px;
+            font-weight: 200;
+        }
+        }
+        @media screen and (min-width:481px) and (max-width:1042px){
+            .content{
+                justify-content: center;
+            }
+            .container>.content>.preview>img{
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <img class="logo" src="./logo.png">
+            </nav>
+        </header>
+        <div class="content">
+            <div class="letter">
+                <span id="title">The Best Football<br /> Betting Application <br />In Myanmar</span>
+                <p>You can watch football matches and bet freely with ease from your android phone</p>
+                <div>
+                    <div class="download">
+                        <button class="first">Direct Download</button>
+                        <button class="ps_button">
+                            <img src="./Google_Play.png">
+                            <div class="ps_text">
+                                <span id="get">GET IT ON</span>
+                                <span>Google Play</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="preview">
+                <img src="./preview.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
